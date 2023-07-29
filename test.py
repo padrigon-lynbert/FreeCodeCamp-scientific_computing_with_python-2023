@@ -8,13 +8,10 @@ But with great power came a daunting choice: use it for good or succumb to darkn
 Her destiny began, teetering on a delicate thread.
 """.lower().split()
 
-# story = story.lower()
-# words = story.split()
+words = [word.strip('.,:') for word in words] #remove special chars
+exclude_words = ["do", "a", "in", "as", "on", "it", "or", "to"] #specify what to exclude
+words = [word for word in words if word not in exclude_words] #remove excluded
 
-words = [word.strip('.,:') for word in words]
-exclude_words = ["do", "a", "in", "as", "on", "it", "or", "to"]
-words = [word for word in words if word not in exclude_words]
-
-for i in range(10):
+for i in range(10): #now test
     random_word = random.choice(words)
     print(random_word)
