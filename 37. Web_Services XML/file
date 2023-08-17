@@ -1,0 +1,8 @@
+<person>
+  <name>Chuck</name>
+  <phone type="intl">
+    +1 734 303 4456
+  <email hide="yes" />
+</person>
+
+<!-- Phone tag is missing closing tag. -->
