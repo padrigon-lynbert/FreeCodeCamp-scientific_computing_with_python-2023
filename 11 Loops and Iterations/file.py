@@ -4,3 +4,7 @@ while True:
         break
     print(n)
     n = n + 1
+
+# 0
+# 1
+# 2
